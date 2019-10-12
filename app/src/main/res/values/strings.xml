@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MDAnimation</string>
+    <string name="description">Hey! I am learning Circular reveal animation with sctivity transtion</string>
+    <string name="circular_reveal">Circular Reveal</string>
+    <string name="siddharth_stuff">Siddharth Stuff</string>
+    <string name="proceed_to_login">Proceed To Login</string>
+</resources>

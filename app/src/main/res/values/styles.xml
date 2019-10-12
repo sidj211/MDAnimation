@@ -1,0 +1,61 @@
+<resources>
+
+   <!--  Base application theme.
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name = "TextFieldTheme">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:editTextColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RegisterButtonTheme" parent="Widget.AppCompat.Button.Colored">
+
+
+       <item name="android:theme">@style/RippleTheme</item>
+
+        <item name="android:textColor">@color/colorTheme</item>
+
+    </style>
+
+    <style name="LoginButtonTheme" parent="Widget.AppCompat.Button.Colored">
+
+
+
+        <item name="android:theme">@style/RippleThemeInWhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+
+    </style>
+
+
+    <style name="RippleThemeInWhite" >
+        <item name="android:colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="RippleTheme" >
+        <item name="android:colorControlHighlight">@color/colorTheme</item>
+    </style>
+</resources>

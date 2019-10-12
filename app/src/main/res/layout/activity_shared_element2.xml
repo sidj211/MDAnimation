@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:id="@+id/click_reveal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/textdesc"
+        android:text="@string/description"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animated"
+        android:textSize="30sp"
+        android:textColor="@android:color/darker_gray"
+        android:transitionName="transition_shared"
+        android:id="@+id/activity_title"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:gravity="center"
+        android:onClick="SharedElementTransition"
+        android:layout_below="@id/activity_title"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:transitionName="logo_shared"
+           android:src="@drawable/boy"
+
+            />
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:src="@drawable/boy"
+            android:transitionName="profile_pic_shared"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit [Back pRESS]"
+        android:layout_below="@id/linear_layout"
+        android:id="@+id/exit_button"
+        />
+
+
+</RelativeLayout>
